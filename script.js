@@ -29,25 +29,31 @@ function getIntegerDayOfWeek(calendarDate){
     return Math.trunc(dayOfWeek);
 }
 
-function getDayOfWeek(calendarDate){
+function getName(calendarDate){
     let integerDay = getIntegerDayOfWeek(calendarDate)
     switch (integerDay) {
         case 0:
-          return day = "Sunday";
+          return birthName = ["Kwasi", "Akosua"];
         case 1:
-          return day = "Monday";
+          return birthName = ["Kwadwo", "Adwoa"];
         case 2:
-            return day = "Tuesday";
+            return birthName = ["Kwabena", "Abenaa"];
         case 3:
-            return day = "Wednesday";
+            return birthName = ["Kwaku", "Akua"];
         case 4:
-            return day = "Thursday";
+            return birthName = ["Yaw", "Yaa"];
         case 5:
-            return day = "Friday";
+            return birthName = ["Kofi", "Afua"];
         case 6:
-            return day = "Saturday";
+            return birthName = ["Kwame", "Ama"];
 }}
 
+function assignName(calendarDate){
+    nameChoice = getName(calendarDate)
+    if (gender == "M") {return nameChoice[0]}
+    else {return nameChoice [1]}
+}
+
 birthday = new calendarDate(1900,10,10)
-//checkValidity(birthday)
-getDayOfWeek(birthday)
+let gender = "M"
+console.log(assignName(birthday))
