@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Birthday Application</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background-image: url('https://images.unsplash.com/photo-1461360228753-597a2c6f61dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+			background-size: cover;
+			background-position: center center;
+			min-height: 100vh;
+			padding-top: 50px;
+		}
+		
+		.container {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		
+		h1 {
+			font-size: 3rem;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		p {
+			font-size: 1.5rem;
+			margin-bottom: 30px;
+		}
+		
+		label {
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+		
+		select {
+			font-size: 1.2rem;
+		}
+		
+		button[type="submit"] {
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center text-primary mb-4">Birthday Application</h1>
+		<p>Welcome to the Birthday Application! This app helps you keep track of important birthdays.</p>
+		
+		<form>
+			<div class="form-group">
+				<label for="birthday">Enter your birthday:</label>
+				<input type="date" class="form-control" id="birthday" name="birthday">
+			</div>
+			
+			<div class="form-group">
+				<label for="gender">Select your gender:</label>
+				<select class="form-control" id="gender" name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="non-binary">Non-Binary</option>
+				</select>
+			</div>
+			
+			<button type="submit" class="btn btn-primary btn-block">Submit</button>
+		</form>
+	</div>
+	
+	<!-- Include Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
