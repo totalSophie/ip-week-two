@@ -29,8 +29,8 @@ function getIntegerDayOfWeek(calendarDate){
     return Math.trunc(dayOfWeek);
 }
 
-function getName(calendarDate){
-    let integerDay = getIntegerDayOfWeek(calendarDate)
+function getName(d){
+    let integerDay = getIntegerDayOfWeek(d)
     switch (integerDay) {
         case 0:
           return birthName = ["Kwasi", "Akosua"];
@@ -48,8 +48,8 @@ function getName(calendarDate){
             return birthName = ["Kwame", "Ama"];
 }}
 
-function assignName(calendarDate){
-    nameChoice = getName(calendarDate)
+function assignName(d){
+    nameChoice = getName(d)
     if (gender == "M") {return nameChoice[0]}
     else {return nameChoice [1]}
 }
