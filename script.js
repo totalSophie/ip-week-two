@@ -13,8 +13,15 @@ function isValidDate(d) {
 function checkValidity(calendarDate){
     let d = new Date(calendarDate);
     console.log(d)
-    console.log(isValidDate(d));
+    return isValidDate(d);
 }
 
 birthday = calendarDate(1900,31,02)
 checkValidity(birthday)
+
+// Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+
+function getDayOfWeek(calendarDate){
+    
+
+}
