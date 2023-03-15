@@ -57,3 +57,7 @@ function assignName(d){
 birthday = new calendarDate(1900,10,10)
 let gender = "M"
 console.log(assignName(birthday))
+
+
+birthDate = document.getElementById("birthday");
+console.log(birthDate)
