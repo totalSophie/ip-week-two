@@ -1,21 +1,21 @@
 ## Project Name
 
-About me
+Akan Name Generator
 
-## Project Description
+## 🔭 Project Description
 
 A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name
 
-## Author
+## 👷 Author
 
 Sophia Chisiya 
 
-## Setup Instructions
+## 🔨 Setup Instructions
 - git clone https://github.com/totalSophie/ip-week-two
 - Open the cloned folder in VS Code
 - Go live
 
-## Live Link
+## 😎 Live Link
 https://totalsophie.github.io/ip-week-two/
 
 ## 💻 Technologies Used
@@ -23,10 +23,8 @@ https://totalsophie.github.io/ip-week-two/
 - CSS
 - Bootstrap
 
-## :octocat: Contact
+## 👨‍💻 Contact
 - totalsophie@gmail.com
 
-
-
 ## License
-(c) 2023 SophieToffee
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
