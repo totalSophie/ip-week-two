@@ -1,3 +1,29 @@
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting and reloading the page
+  const birthdayInput = document.querySelector('#birthday');
+  const genderInput = document.querySelector('#gender');
+
+  const birthday = birthdayInput.value;
+  const gender = genderInput.value;
+
+  const date = new Date(birthday);
+  const birthDate = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+
+  calendarDate = new calendarDate(birthDate,month,year)
+
+  const akanIntro = document.createElement('p');
+  akanIntro.textContent = `Your Akan name is: `;
+  const h = document.createElement('hr');
+  const answer = document.querySelector('.answer');
+  answer.append(akanIntro)
+  answer.innerHTML += assignName(calendarDate, gender)
+
+})
+
 function calendarDate(day, month, year){
     // the constructor
     this.day = day;
@@ -48,16 +74,8 @@ function getName(d){
             return birthName = ["Kwame", "Ama"];
 }}
 
-function assignName(d){
+function assignName(d, gender){
     nameChoice = getName(d)
-    if (gender == "M") {return nameChoice[0]}
+    if (gender == "male") {return nameChoice[0]}
     else {return nameChoice [1]}
 }
-
-birthday = new calendarDate(1900,10,10)
-let gender = "M"
-console.log(assignName(birthday))
-
-
-birthDate = document.getElementById("birthday");
-console.log(birthDate)
