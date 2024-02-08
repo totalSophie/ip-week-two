@@ -8,7 +8,7 @@ A web application that takes a user's birthday and calculates the day of the wee
 
 ## 👷 Author
 
-Sophia Chisiya 
+Soph
 
 ## 🔨 Setup Instructions
 - git clone https://github.com/totalSophie/ip-week-two
